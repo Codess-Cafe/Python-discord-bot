@@ -3,12 +3,18 @@ import random
 
 TOKEN = "#"
 
+
 bot = commands.Bot(command_prefix='!')
 
 @bot.command(name='faq', help='Searches the FAQ for the most relevant section corresponding to the provided keyword.')
 async def faq(ctx, keyword):
     response = keyword
     await ctx.send(response)
+
+@bot.command()
+async def description(ctx):
+    description = '''This is a discord bot to provide a random leetcode question on a daily basis'''.
+    await ctx.send(description)
 
 
 @bot.event
