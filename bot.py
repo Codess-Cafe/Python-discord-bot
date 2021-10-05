@@ -29,6 +29,13 @@ def get_qoute():
     json_data = json.loads(response.text)
     quote = json_data[0]['q'] + " -" + json_data[0]['a']
     return (quote)
+
+def get_joke():
+    url = "https://v2.jokeapi.dev/joke/Any?safe-mode"
+    response = requests.get(url)
+    json_data = json.loads(response.text)
+    joke = json_data['setup'] + " - " + json_data['delivery']
+    return(joke)
     
 @bot.event
 async def on_message(message):
@@ -38,6 +45,9 @@ async def on_message(message):
         return
     if 'quote' in msg.lower():
         response = get_qoute()
+        await message.channel.send(response)
+    if 'joke' in msg.lower():
+        response = get_joke()
         await message.channel.send(response)
 
 bot.run(TOKEN)
