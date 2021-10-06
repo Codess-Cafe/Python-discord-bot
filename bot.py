@@ -13,7 +13,11 @@ async def faq(ctx, keyword):
 
 @bot.command()
 async def description(ctx):
-    description = '''This is a discord bot to provide a random leetcode question on a daily basis'''.
+    description = '''Hey there!!! I am **botname**. 
+    I provide you a randome leetcode question everyday according to the difficulty level you need. 
+    You can access my complete documentation here: https://github.com/Codess-Cafe/Python-discord-bot.
+    I was made by some super talented mentess of Codess Cafe which provides pro-bono mentorship for collegiate women in tech.
+    HAPPY LEARNING :)'''.
     await ctx.send(description)
 
 
