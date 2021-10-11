@@ -1,1 +1,2 @@
+requests==2.25.1
 discord==1.7.3
