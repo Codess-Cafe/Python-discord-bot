@@ -1,5 +1,10 @@
+# Python Discord Bot
+
+A discord bot that posts programming questions everyday for users to learn and track their progress.
+
+
 # Python-discord-bot
-Discord bot for codes.cafe built using python
+Discord bot for codess.cafe built using python
 
 
 # Note - This project is only for mentees of codess.cafe under open source track
