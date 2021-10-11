@@ -111,6 +111,7 @@ The bot uses external APIs to fetch data required by the user.
 - The `Joke API` involves sending a request to [this URL](https://v2.jokeapi.dev/joke/Any?safe-mod) which returns a `JSON` variable consisting of `setup` which is stored in the `setup` identifier, and `delivery` which is stored in the identifier `delivery` of the returned object. Appending `safe-mod` at the end of the request ensures clean, non-explicit jokes.
 
 [This website](https://premium.zenquotes.io/zenquotes-documentation/) contains more information about the `ZenQuotes API`.
+
 [This website](https://v2.jokeapi.dev/) contains more information about the `Joke API`.
 
 ## Features
