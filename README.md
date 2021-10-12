@@ -104,6 +104,7 @@ The bot detects messages from all users that are not the bot itself and does the
 The bot detects commands that begin with the command prefix `!` and does the following:
 - Responds to the `faq` command by searching for a `user specified keyword` in the user's message and returning a suitable response.
 - Responds to the `description` command by returning the description of what the bot does. This is stored as predefined variable.
+- Responds to the `counter` command by returning the number of problems solved by the user. This information is retrieved from the count function.
 
 
 #### APIs
