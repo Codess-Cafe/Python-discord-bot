@@ -1,5 +1,6 @@
 from discord.ext import commands
 import random
+from alive import keep_alive
 
 TOKEN = "#"
 
@@ -22,8 +23,6 @@ async def on_message(message):
     greetings = ['Hey! How are you?', 'Hello! Glad to see you.']
     await message.channel.send(random.choice(greetings))
 
-bot.run(TOKEN)
-
 def get_qoute():
     response = requests.get("https://zenquotes.io/api/random")
     json_data = json.loads(response.text)
@@ -39,6 +38,6 @@ async def on_message(message):
     if 'quote' in msg.lower():
         response = get_qoute()
         await message.channel.send(response)
-
+keep_alive()
 bot.run(TOKEN)
 
