@@ -21,7 +21,7 @@ def count (author) :
     return solvedCount
 
 @bot.command (name = 'counter', help = 'Counts the number of questions solved by the user')
-async def faq(ctx):
+async def counter(ctx):
     response = f"{ctx.message.author.mention} you have solved {count(ctx.message.author)} problems"
     await ctx.send(response)
 
