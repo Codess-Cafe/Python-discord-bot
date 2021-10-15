@@ -1,3 +1,4 @@
+
 <img src = "https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" /> <img src = "https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" />
 
 ![Codess Cafe](./images/codess-logo.png)
@@ -176,4 +177,14 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+# Python-discord-bot
+Discord bot for codes.cafe built using python
 
+
+
+# Note - This project is only for mentees of codess.cafe under open source track
+# getting started for contributing 
+- head over to `issues` tab and grab any `good-first-issue`
+- comment on the issue and ask for it to be assigned 
+- after the issue is assigned, fork the repo and create a local clone
+- get contributing !
