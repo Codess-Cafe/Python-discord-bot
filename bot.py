@@ -1,7 +1,11 @@
 from discord.ext import commands
 import random
+
+from alive import keep_alive
+
 import json
 import requests
+
 
 TOKEN = "#"
 
@@ -65,5 +69,5 @@ async def on_message(message):
     if 'quote' in msg.lower():
         response = get_qoute()
         await message.channel.send(response)
-
+keep_alive()
 bot.run(TOKEN)
