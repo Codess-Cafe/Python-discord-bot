@@ -24,7 +24,7 @@ async def description(ctx):
     I provide you a randome leetcode question everyday according to the difficulty level you need. 
     You can access my complete documentation here: https://github.com/Codess-Cafe/Python-discord-bot.
     I was made by some super talented mentess of Codess Cafe which provides pro-bono mentorship for collegiate women in tech.
-    HAPPY LEARNING :)'''.
+    HAPPY LEARNING :)'''
     await ctx.send(description)
 
 def count (author) :
@@ -49,11 +49,19 @@ async def on_message(message):
   
   mssg = ['hi', 'hello', 'hey']
 
+  msg2 = ['good morning', 'good night', 'good evening']
+  greetings2 = [ f'Thanks, you too {message.author.name}! Have a great time ahead.' , f"It’s nice to meet you, {message.author.name}! How's it going?", f"Warm Greetings, {message.author.name}! How have you been?" ]
+
+
   if message.content.lower().startswith(tuple(mssg)):
     greetings = ['Hey! How are you?', 'Hello! Glad to see you.']
     await message.channel.send(random.choice(greetings))
 
-
+  for greets in msg2:
+      if greets in message.content.lower():
+          await message.channel.send(random.choice(greetings2))
+  
+  
 def get_qoute():
     response = requests.get("https://zenquotes.io/api/random")
     json_data = json.loads(response.text)
