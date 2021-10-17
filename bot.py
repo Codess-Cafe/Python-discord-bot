@@ -1,6 +1,6 @@
 from discord.ext import commands
 import random
-
+import discord
 from alive import keep_alive
 
 import json
@@ -20,12 +20,19 @@ async def faq(ctx, keyword):
 
 @bot.command()
 async def description(ctx):
-    description = '''Hey there!!! I am **botname**. 
+    
+    description = '''
     I provide you a randome leetcode question everyday according to the difficulty level you need. 
     You can access my complete documentation here: https://github.com/Codess-Cafe/Python-discord-bot.
     I was made by some super talented mentess of Codess Cafe which provides pro-bono mentorship for collegiate women in tech.
-    HAPPY LEARNING :)'''.
-    await ctx.send(description)
+    HAPPY LEARNING :)'''
+
+    embed = discord.Embed(
+        title = f'Hey there! I am **botname**',
+        description = description,
+        color = 0x183C34
+    )
+    await ctx.send(embed = embed)
 
 def count (author) :
     '''
@@ -75,11 +82,19 @@ async def on_message(message):
         return
     if 'quote' in msg.lower():
         response = get_qoute()
-        await message.channel.send(response)
+        embed = discord.Embed(
+            title = f'`{response}`',
+            color = 0x183C34
+        )
+        await message.channel.send(embed = embed)
 
     if 'joke' in msg.lower():
         response = get_joke()
-        await message.channel.send(response)
+        embed = discord.Embed(
+            title = f'`{response}`',
+            color = 0x183C34
+        )
+        await message.channel.send(embed=embed)
 
 
 keep_alive()
