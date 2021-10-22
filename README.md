@@ -1,7 +1,7 @@
 
 <img src = "https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" /> <img src = "https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" />
 
-![Codess Cafe](./images/codess-logo.png)
+![Codess Cafe](./codesscafe.png)
 
 # Python Discord Bot
 > Daily DSA Bot
@@ -27,6 +27,9 @@ An open source project developed by the mentees of [Codess Cafe](https://codess.
   - [Contributing](#contributing)
   - [Important Links](#important-links)
   - [Licensing](#licensing)
+- [Python-discord-bot](#python-discord-bot-1)
+- [Note - This project is only for mentees of codess.cafe under open source track](#note---this-project-is-only-for-mentees-of-codesscafe-under-open-source-track)
+- [getting started for contributing](#getting-started-for-contributing)
 
 ## Installation / Getting Started
 
@@ -143,6 +146,8 @@ The bot uses external APIs to fetch data required by the user.
 Add any issues or features that you think will improve the application in the issues tab!
 
 All contributions and features are welcome!
+
+Refer to `CONTRIBUTING.md` for more information!
 
 ## Important Links
 
