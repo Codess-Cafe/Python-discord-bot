@@ -112,6 +112,8 @@ Your new branch should have an asterisk because it's the branch you'll be pushin
  
 You are finally ready to start contributing!
 
+It's a good idea to study the existing codebase and the `README.md` file to understand how the code is organized and the coding styles and standards. Try to make the code modular wherever possible, and make it as efficient as possible.
+
 Make the required changes to the local clone so it tackles the issue that you are assigned. Then, you need to add your files to the staging area, commit them to your repository, and push them to the branch of your clone.
 
 Run the following commands:
