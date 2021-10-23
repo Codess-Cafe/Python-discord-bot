@@ -15,6 +15,7 @@
       - [Making A Branch](#making-a-branch)
       - [Pushing Your Changes](#pushing-your-changes)
       - [Opening the Pull Request](#opening-the-pull-request)
+  - [Additional Resources](#additional-resources)
 
 ## Introduction
 
@@ -148,7 +149,13 @@ It is a good idea to check if the pull request is able to merge. The message wil
 
 If you followed the steps above correctly, the maintainers will review your pull request and merge it into the main repository. Your code can now be seen and used by everyone who uses the repository!
 
+## Additional Resources
 
+
+You can refer to the following links for more information:
+- https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/
+- https://github.com/freeCodeCamp/how-to-contribute-to-open-source
+- https://www.dataschool.io/how-to-contribute-on-github/
 
 In case of any doubts or questions, you can reach out to the maintainers or mentors to help you out. 
 
