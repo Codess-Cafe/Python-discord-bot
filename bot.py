@@ -27,12 +27,16 @@ async def description(ctx):
     I was made by some super talented mentess of Codess Cafe which provides pro-bono mentorship for collegiate women in tech.
     HAPPY LEARNING :)'''
 
+    await ctx.send(description)
+
+
     embed = discord.Embed(
         title = f'Hey there! I am **botname**',
         description = description,
         color = 0x183C34
     )
     await ctx.send(embed = embed)
+
 
 def count (author) :
     '''
@@ -56,11 +60,19 @@ async def on_message(message):
   
   mssg = ['hi', 'hello', 'hey']
 
+  msg2 = ['good morning', 'good night', 'good evening']
+  greetings2 = [ f'Thanks, you too {message.author.name}! Have a great time ahead.' , f"It’s nice to meet you, {message.author.name}! How's it going?", f"Warm Greetings, {message.author.name}! How have you been?" ]
+
+
   if message.content.lower().startswith(tuple(mssg)):
     greetings = ['Hey! How are you?', 'Hello! Glad to see you.']
     await message.channel.send(random.choice(greetings))
 
-
+  for greets in msg2:
+      if greets in message.content.lower():
+          await message.channel.send(random.choice(greetings2))
+  
+  
 def get_qoute():
     response = requests.get("https://zenquotes.io/api/random")
     json_data = json.loads(response.text)
